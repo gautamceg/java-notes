@@ -8,3 +8,9 @@
 - If roundUp
 - ```double maxRoundValue = Math.ceil(Double.valueOf(maxValue) / Double.valueOf(maxStep)) * Double.valueOf(maxStep);```
 
+3. **How to run specific JUnit test class or method?**
+- To execute all tests in a file CircleTest.java
+  ```mvn clean package -Dtest=CircleTest```
+
+- To execute specific testMethod() in a file CircleTest.java
+  ```mvn clean package -Dtest=CircleTest#testMethod```
